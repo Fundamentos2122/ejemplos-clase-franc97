@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y Listas</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse; caption-side:bottom;
+    }
+
+    th, td{ border: solid 1px black;}
+
+
+</style>
+<body>
+    <table>
+        <caption>Esta es una Tabla</caption>
+        <head>
+            <tr>
+                <th rowspan="2">Nombre</th>       <!-- 1 -->
+                <th rowspan="2">Genero</th>       <!-- 2 -->
+                <th colspan="3">Plataforma</th>       <!-- 1 -->
+                <th rowspan="2">Año de salida</th>    <!-- 4 -->
+            </tr>
+            <tr>
+                  <!-- 1 -->
+                  <!-- 1 -->
+                <th>Xbox</th>   <!-- 3 -->
+                <th>PC</th>   <!-- 4 -->
+                <th>PlayStation</th>       <!-- 5 -->
+                  <!-- 6 -->
+            </tr>
+        </head>
+        <tbody>
+            <tr>
+                <td>Halo</td>
+                <td>Shooter</td>
+                <td colspan="2"><center>X</center></td>
+                <td></td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>Satisfactory</td>
+                <td>Simulación</td>
+                <td></td>
+                <td><center>X</center></td>
+                <td></td>
+                <td>2019</td>
+            </tr>
+
+            <tr>
+                <td>Overwatch</td>
+                <td>Shooter</td>
+               <td colspan="3"><center>X</center></td>
+                <td>2016</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
