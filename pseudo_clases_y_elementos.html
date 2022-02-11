@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclases</title>
+    <style>
+        button:hover{
+            background-color: darkred;
+            color: white;
+        }
+
+        input[type="checkbox"]:checked{
+            box-shadow: green 4px 4px 2px;
+        }
+
+        input[type="text"]:focus{
+            border-width: 5px;
+        }
+
+        /* Pseudoelementos */
+        p::first-letter{
+            font-size: 24px;
+        }
+
+        p::first-line{
+            font-style: italic;
+        }
+
+        p::selection{
+            background-color: yellow;
+        }
+
+        p.cita::before{
+            content: "\"";
+            border: 1px solid red;
+        }
+
+        p.cita::after{
+            content: "\"";
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Nombre">
+        <br>
+        <input type="checkbox">
+        <label for="">Check aqui</label>
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a asperiores fugiat placeat nihil impedit facere. Ipsum, aperiam officiis eligendi sed dolorum consequatur nisi hic magni corporis nulla fugit suscipit.</p>
+
+    <p class="cita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi soluta, ex voluptates velit corrupti accusantium nesciunt cum! Error explicabo voluptas, aut sequi porro ad quidem repudiandae rem totam delectus!</p>
+</body>
+</html>
